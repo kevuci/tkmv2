@@ -45,7 +45,7 @@ const University: React.FC = () => {
               >
                 <motion.img
                   className="w-42 h-52 object-cover rounded-lg shadow-lg transform transition-transform hover:scale-105"
-                  src="/src/university.of.eger.png"
+                  src="/content/university.of.eger.png"
                   alt="Eszterházy Károly Katolikus Egyetem"
                 />
               </motion.div>
