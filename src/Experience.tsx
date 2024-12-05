@@ -30,7 +30,7 @@ const Experience: React.FC = () => {
   return (
     <div
       id="Experience"
-      className="h-screen w-screen bg-gray-500 flex items-center justify-center px-3"
+      className=" bg-gray-500 flex items-center justify-center px-3"
     >
       <section ref={sectionRef}>
         {isVisible && (

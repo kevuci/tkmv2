@@ -28,10 +28,7 @@ const University: React.FC = () => {
   }, []);
 
   return (
-    <div
-      id="School"
-      className="h-screen w-screen bg-gray-200 flex items-center justify-center px-3"
-    >
+    <div className="   bg-gray-200 flex items-center justify-center px-3">
       <section id="School" ref={sectionRef}>
         {isVisible && (
           <div className="max-w-6xl w-full">

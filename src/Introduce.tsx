@@ -28,10 +28,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div
-      id="About"
-      className="min-h-screen w-screen mt-20 md:mt-0 flex items-center justify-center"
-    >
+    <div id="About" className=" mt-20 md:mt-0 flex items-center justify-center">
       <section id="About" ref={sectionRef}>
         {isVisible && (
           <div className="w-full h-full">
