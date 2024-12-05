@@ -45,7 +45,7 @@ const Experience: React.FC = () => {
               >
                 <motion.img
                   className="w-42 h-52 object-cover rounded-lg shadow-lg transform transition-transform hover:scale-105"
-                  src="/public/content/other/sales.jpg" // Cseréld ki a megfelelő képre
+                  src="/content/other/sales.jpg" // Cseréld ki a megfelelő képre
                   alt="Workplace"
                 />
               </motion.div>

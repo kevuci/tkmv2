@@ -43,7 +43,7 @@ const App: React.FC = () => {
                   initial={{ y: -100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 1 }}
-                  src="/public/content/other/pfp.png"
+                  src="/content/other/pfp.png"
                   alt="Profile"
                 />
               </div>
