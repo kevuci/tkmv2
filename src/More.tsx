@@ -142,12 +142,13 @@ const App: React.FC = () => {
         {
           src: "/content/travel/IMG_7236.JPEG",
           title: "Sarud",
-          description: "Supping on the Tisza.",
+          description:
+            "I’ve had the opportunity to travel to many places abroad in the past, but it’s been a while since I last ventured out. I want to change that in the future and dedicate more time to exploring the world. My dream is to visit all kinds of places—from breathtaking beaches and vast oceans to towering mountains and snowy landscapes. I want to experience the diversity our planet has to offer, immerse myself in different cultures, and create unforgettable memories. Traveling the world and seeing as much as possible is something I deeply aspire to.",
         },
         {
           src: "/content/travel/IMG_1884.JPEG",
           title: "Rudabánya",
-          description: "Minelake trip with bae.",
+          description: "Trip with bae.",
         },
         {
           src: "/content/travel/IMG_2642.JPEG",
@@ -163,7 +164,7 @@ const App: React.FC = () => {
         {
           src: "/content/travel/IMG_8251.JPEG",
           title: "Dunakeszi",
-          description: "Dog, pet beach, with our family and Miko.",
+          description: "Pet beach, with our family and Miko.",
         },
       ],
     },
