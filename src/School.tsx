@@ -13,7 +13,7 @@ const University: React.FC = () => {
           observer.disconnect();
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.2 }
     );
 
     if (sectionRef.current) {
@@ -28,7 +28,7 @@ const University: React.FC = () => {
   }, []);
 
   return (
-    <div className="   bg-gray-200 flex items-center justify-center px-3">
+    <div className="min-h-screen  bg-gray-200 flex items-center justify-center px-3">
       <section id="School" ref={sectionRef}>
         {isVisible && (
           <div className="max-w-6xl w-full">
