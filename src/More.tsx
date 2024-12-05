@@ -319,7 +319,8 @@ const App: React.FC = () => {
                 onClick={() => setSelectedCategory(null)}
               >
                 <motion.div
-                  className="bg-white p-4 sm:p-6 md:p-8 rounded-lg w-full max-w-xs sm:max-w-md md:max-w-lg transform transition duration-500"
+                  className="bg-white p-4 sm:p-6 md:p-8 rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md transform transition duration-500 
+                          max-h-[90vh] sm:max-h-[80vh] overflow-y-auto"
                   initial={{ scale: 0.8 }}
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.3 }}
@@ -328,12 +329,12 @@ const App: React.FC = () => {
                   <img
                     src={selectedCategory.images[selectedCategory.index].src}
                     alt={selectedCategory.images[selectedCategory.index].title}
-                    className="w-full rounded-lg mb-6"
+                    className="w-full rounded-lg mb-6 max-h-[40vh] object-cover"
                   />
                   <h2 className="md:text-3xl text-xl font-bold text-gray-800 mb-4 transform transition duration-300 ease-in-out hover:text-gray-700">
                     {selectedCategory.images[selectedCategory.index].title}
                   </h2>
-                  <p className="text-gray-800 whitespace-pre-wrap mb-6 p-2 max-h-[6.25rem] overflow-auto overflow-y-auto">
+                  <p className="text-gray-800 whitespace-pre-wrap mb-6 p-2 overflow-auto">
                     {
                       selectedCategory.images[selectedCategory.index]
                         .description
