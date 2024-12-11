@@ -8,7 +8,7 @@ const Landing: React.FC = () => {
       className="min-h-screen md:w-screen flex items-center justify-center"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1732468928980-a294bc2845d6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          "url('https://images.unsplash.com/photo-1480422080719-4d25a4c7e22c?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",

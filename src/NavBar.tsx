@@ -167,7 +167,7 @@ const Navbar: React.FC = () => {
               className="flex-shrink-0"
             >
               <a href="/" className="text-white text-2xl font-bold">
-                tothkevemate
+                tothkevemate🎄
               </a>
             </motion.div>
 
