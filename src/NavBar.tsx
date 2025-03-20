@@ -71,74 +71,6 @@ const Navbar: React.FC = () => {
     }
   };
 
-  // Snowfall Effect
-  useEffect(() => {
-    const canvas = document.getElementById("snowCanvas") as HTMLCanvasElement;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = isVisible ? 200 : 0;
-    };
-
-    resizeCanvas();
-
-    const snowflakes: { x: number; y: number; r: number; d: number }[] = [];
-    const numFlakes = 100;
-
-    for (let i = 0; i < numFlakes; i++) {
-      snowflakes.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        r: Math.random() * 3 + 1,
-        d: Math.random() * numFlakes,
-      });
-    }
-
-    const drawSnowflakes = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = "white";
-      ctx.beginPath();
-      for (const flake of snowflakes) {
-        ctx.moveTo(flake.x, flake.y);
-        ctx.arc(flake.x, flake.y, flake.r, 0, Math.PI * 2, true);
-      }
-      ctx.fill();
-      updateSnowflakes();
-    };
-
-    const updateSnowflakes = () => {
-      for (const flake of snowflakes) {
-        flake.y += Math.cos(flake.d) + 1;
-        flake.x += Math.sin(flake.d);
-
-        if (flake.y > canvas.height) {
-          flake.y = 0;
-          flake.x = Math.random() * canvas.width;
-        }
-      }
-    };
-
-    const animate = () => {
-      if (isVisible) {
-        drawSnowflakes();
-      } else {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-      }
-      requestAnimationFrame(animate);
-    };
-
-    animate();
-
-    window.addEventListener("resize", resizeCanvas);
-    return () => {
-      window.removeEventListener("resize", resizeCanvas);
-    };
-  }, [isVisible]);
-
   return (
     <>
       <motion.nav
@@ -167,7 +99,7 @@ const Navbar: React.FC = () => {
               className="flex-shrink-0"
             >
               <a href="/" className="text-white text-2xl font-bold">
-                tothkevemate🎄
+                tothkevemate
               </a>
             </motion.div>
 
