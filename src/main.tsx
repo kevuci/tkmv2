@@ -9,7 +9,7 @@ import BackToTop from "./BackToTopButton.tsx";
 import Skills from "./Skills.tsx";
 import Contactme from "./Contact.tsx";
 import Experience from "./Experience.tsx";
-import More from "./More.tsx";
+//import More from "./More.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -21,7 +21,7 @@ createRoot(document.getElementById("root")!).render(
       <Skills />
       <Contactme />
       <Experience />
-      <More />
+      {/* <More /> */}
       <BackToTop />
     </div>
   </StrictMode>

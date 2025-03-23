@@ -17,14 +17,12 @@ const Landing: React.FC = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 2.5, delay: 0.5 }}
     >
-      {/* Content Wrapper */}
       <motion.div
         className="text-center py-8 w-screen bg-white bg-opacity-80"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 2, delay: 0.5, type: "spring", stiffness: 50 }}
       >
-        {/* Header */}
         <motion.h1
           className="text-3xl text-black sm:text-4xl font-semibold mb-6"
           initial={{ scale: 0 }}
@@ -34,7 +32,6 @@ const Landing: React.FC = () => {
           Welcome to my World!
         </motion.h1>
 
-        {/* Subtitle */}
         <motion.p
           className="text-lg text-black sm:text-xl mb-8 px-4 sm:px-8"
           initial={{ x: -100, opacity: 0 }}
@@ -45,7 +42,6 @@ const Landing: React.FC = () => {
           connect!
         </motion.p>
 
-        {/* Button */}
         <motion.a
           href="#About"
           className="bg-black text-white px-6 py-3 rounded-lg text-lg sm:text-xl font-semibold hover:bg-gray-600 focus:outline-none transition-colors"
@@ -58,7 +54,6 @@ const Landing: React.FC = () => {
           Let's jump in...
         </motion.a>
 
-        {/* Divider */}
         <motion.hr
           className="border-black m-8"
           initial={{ width: "0%" }}
@@ -66,7 +61,6 @@ const Landing: React.FC = () => {
           transition={{ duration: 2, delay: 1.5 }}
         />
 
-        {/* Quote */}
         <motion.p
           className="text-lg mt-4 text-black sm:text-xl mb-8 px-4 sm:px-8"
           initial={{ y: 50, opacity: 0 }}
@@ -77,9 +71,8 @@ const Landing: React.FC = () => {
         </motion.p>
       </motion.div>
 
-      {/* Decorative Elements */}
       <motion.div
-        className="absolute top-8 left-8 w-12 h-12 rounded-full bg-orange-200 opacity-70"
+        className="absolute top-8 left-8 w-12 h-12 rounded-full bg-purple-200 opacity-70"
         initial={{ scale: 0 }}
         animate={{ scale: 1.2 }}
         transition={{
@@ -89,7 +82,7 @@ const Landing: React.FC = () => {
         }}
       />
       <motion.div
-        className="absolute bottom-8 right-8 w-12 h-12 rounded-full bg-orange-300 opacity-70"
+        className="absolute bottom-8 right-8 w-12 h-12 rounded-full bg-purple-300 opacity-70"
         initial={{ scale: 0 }}
         animate={{ scale: 1.2 }}
         transition={{

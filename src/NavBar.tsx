@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
     "Skills",
     "Contact",
     "Experience",
-    "More",
+    // "More",
   ];
 
   useEffect(() => {

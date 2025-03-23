@@ -33,7 +33,6 @@ const University: React.FC = () => {
         {isVisible && (
           <div className="max-w-6xl w-full">
             <div className="flex flex-col items-center md:flex-row">
-              {/* Left Section - University Image */}
               <motion.div
                 className="mt-4"
                 initial={{ x: -200, opacity: 0 }}
@@ -47,7 +46,6 @@ const University: React.FC = () => {
                 />
               </motion.div>
 
-              {/* Right Section - Content */}
               <motion.div
                 className="md:w-2/3 p-8 md:p-14 text-center md:text-left"
                 initial={{ y: 50, opacity: 0 }}
